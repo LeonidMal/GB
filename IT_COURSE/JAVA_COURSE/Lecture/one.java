@@ -1,5 +1,7 @@
 package IT_COURSE.JAVA_COURSE.Lecture;
 
+import java.util.Arrays;
+import java.util.Random;
 /**
  * one
  */
@@ -9,7 +11,7 @@ import java.io.*;
 
 public class one {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         
         // int i = 5;                                   //в начале данного файла импортирован созданный ранее мной файл с методами (tempMethods.java), 
         // String b = "dsf";                            //в коде слева я обращаюсь к заранее прописанному методу "getType()" из файла tempMethods.java
@@ -143,6 +145,60 @@ public class one {
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------
 
+                // *Д\З*
 
+        // Задана натуральная степень k. Сформировать случайным
+        // образом список коэффициентов (значения от 0 до 100)
+        // многочлена многочлен степени k.
+        // *Пример: k=2 => 2*x² + 4*x + 5 = 0 или x² + 5 = 0 или 10*x²
+
+        // Scanner scan = new Scanner(System.in);
+        // Random rnd = new Random();
+        // String x = "x";
+
+        // System.out.println("Enter the value of the natural degree:");
+        // int k = scan.nextInt();
+
+        // int degree = k;
+        // for (int i = 0; i < k - 1; i++) {
+        //     int r = rnd.nextInt(101);
+        //     if (r > 1) System.out.printf("%d * x^%d", r, degree);
+        //     else if (r == 1) System.out.printf("x^%d", degree);
+        //     degree--;
+        //     if (degree > 0 && r != 0) System.out.printf(" + ");
+        // }
+
+        // int r = rnd.nextInt( 101);
+        // if (r > 1) System.out.printf("%d * x", r);
+        // else if (r == 1) System.out.print("x");
+        
+        // int rEnd = rnd.nextInt(101);
+        // if (rEnd >= 1) System.out.printf(" + %d", rEnd);
+
+        // System.out.print(" = 0\n\n");
+        // scan.close();
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+        // Даны два файла, в каждом из которых находится запись
+        //многочлена. Сформировать файл содержащий сумму
+        //многочленов.
+
+        try (FileWriter fw = new FileWriter("polin_1.txt", false)) {
+            fw.write("8 * x^2 + 15 * x + 6 = 0");
+            fw.close();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+        try (FileWriter fw = new FileWriter("polin_2.txt", false)) {
+            fw.write("35 * x^2 + 2 * x + 14 = 0");
+            fw.close();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+      
+
+        }
     }
 } 
