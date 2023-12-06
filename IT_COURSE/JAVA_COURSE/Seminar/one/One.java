@@ -1,6 +1,5 @@
 package IT_COURSE.JAVA_COURSE.Seminar.one;
 
-import java.sql.Time;
 import java.time.LocalTime;
 import java.util.Scanner;
 
@@ -23,6 +22,7 @@ public class One {
         else if (12 <= hour && hour < 18) System.out.printf("Good afternoon, %s!", name);
         else if (18 <= hour && hour < 23) System.out.printf("Good evening, %s!", name);
         else System.out.printf("Good night, %s!", name);
-        scan.close();
+        scan.close();    // * не стоит закрывать(scan.close()) при работе только с консолью, так как закроется доступ к консоли в дальнейшем!
+                         //   закрывать ОБЯЗАТЕЛЬНО при работе с файлами (чтобы в дальнейшем у других частей программы был доступ к данному файлу)
     }
 }
