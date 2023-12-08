@@ -17,8 +17,7 @@ class Answer {
         // Напишите свое решение ниже
         int num = 59;
         System.out.printf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n", 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53);
-        int i = 2;
-        int j = 0;
+
 
         while (num <= 997) {
             if (num % 2 == 0 || num % 3 == 0 || num % 5 == 0 || num % 7 == 0 || num % 11 == 0 || num % 13 == 0 || num % 17 == 0 || num % 19 == 0 || num % 23 == 0 || num % 29 == 0 || num % 31 == 0 || num % 37 == 0 || num % 41 == 0 || num % 43 == 0 || num % 47 == 0 || num % 53 == 0) {
