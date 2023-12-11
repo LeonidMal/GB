@@ -17,6 +17,7 @@ public class Six {
         System.out.println("Enter a degree:");
         int b = scan.nextInt();
         System.out.println(pow_num(a, b));
+        scan.close();
     }
     static double pow_num(double num1, int num2) {
         
